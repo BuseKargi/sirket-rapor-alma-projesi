@@ -1,0 +1,16 @@
+package com.OOP.Classes;
+import java.io.IOException;
+
+import com.OOP.EntityClasses.Calisan;
+import com.OOP.EntityClasses.Mudur;
+import com.OOP.EntityClasses.Rapor;
+
+public class MainClass {
+	public static void main(String[] args) throws IOException {
+		Calisan mudur = new Mudur("Kemal", "Toköz");
+		String metin = "Bu rapor talep üzerine oluşturulmuştur";
+		Rapor rapor = new Rapor(metin, "03.03.2020", mudur);
+		TextFormatRapor txtRapor = new TextFormatRapor();
+		txtRapor.RaporOlustur(rapor);
+	}
+}
