@@ -1,0 +1,8 @@
+package com.OOP.Islemler;
+import java.io.IOException;
+
+import com.OOP.EntityClasses.Rapor;
+
+public interface RaporAl {
+	void RaporOlustur(Rapor rapor) throws IOException;
+}
