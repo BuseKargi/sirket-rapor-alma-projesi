@@ -1,0 +1,34 @@
+package com.OOP.EntityClasses;
+
+import java.util.Date;
+
+public class Rapor {
+	private String metin;
+	private String tarih;
+	private Calisan calisanBilgi;
+	
+	public Rapor(String metin, String tarih, Calisan calisanBilgi){
+		this.metin = metin;
+		this.tarih = tarih;
+		this.calisanBilgi = calisanBilgi;
+	}
+	
+	public String getTarih() {
+		return tarih;
+	}
+	public void setTarih(String tarih) {
+		this.tarih = tarih;
+	}
+	public String getMetin() {
+		return metin;
+	}
+	public void setMetin(String metin) {
+		this.metin = metin;
+	}
+	public Calisan getCalisanBilgi() {
+		return calisanBilgi;
+	}
+	public void setCalisanBilgi(Calisan calisanBilgi) {
+		this.calisanBilgi = calisanBilgi;
+	}
+}
