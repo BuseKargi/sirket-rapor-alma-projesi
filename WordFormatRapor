@@ -1,0 +1,15 @@
+package com.OOP.Classes;
+
+import java.io.IOException;
+
+import com.OOP.EntityClasses.Rapor;
+import com.OOP.Islemler.RaporAl;
+
+public class WordFormatRapor implements RaporAl{
+
+	@Override
+	public void RaporOlustur(Rapor rapor) throws IOException {
+		// TODO Word formatında rapor alacak kodlar
+	}
+
+}
