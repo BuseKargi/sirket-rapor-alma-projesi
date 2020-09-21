@@ -1,0 +1,21 @@
+package com.OOP.Classes;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import com.OOP.EntityClasses.Rapor;
+import com.OOP.Islemler.RaporAl;
+
+public class TextFormatRapor implements RaporAl{
+
+	@Override
+	public void RaporOlustur(Rapor rapor) throws IOException {
+		FileWriter writer = new FileWriter("Rapor.txt");
+		writer.write(rapor.getMetin());
+        writer.write("\r\n");   // write new line
+        writer.write(rapor.getCalisanBilgi().getAd() + 
+        		" " + rapor.getCalisanBilgi().getSoyad() +
+        		" " + rapor.getCalisanBilgi().getGorev());
+        System.out.println("Rapor oluşturuldu.");
+        writer.close();
+	}
+}
